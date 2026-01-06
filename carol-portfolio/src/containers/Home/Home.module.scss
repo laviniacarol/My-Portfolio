@@ -48,6 +48,12 @@
   font-size: clamp(2rem, 4vw, 1rem);
   cursor: pointer;
   color: #000;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
 }
 
 .content {
@@ -83,6 +89,7 @@
 .subtitle {
   display: flex;
   align-items: center;
+  margin-top: clamp(-40px, -10vw, -50px);
   gap: 3px;
   font-size: clamp(2.6rem, 4vw, 3rem);
   color: #041cf1;
@@ -92,7 +99,7 @@
   font-family: "Biro Script", cursive;
   display: inline-block;
   margin-right: clamp(130px, 20vw, 160px);
-  max-width: clamp(240px, 27vw, 430px);
+  max-width: clamp(400px, 27vw, 430px);
   margin-top: clamp(0px, -20vw, -50px);
 }
 
@@ -107,7 +114,13 @@
   bottom: 24px;
   background: none;
   border: none;
-  font-size: 32px;
+  font-size: 62px;
   color: #041cf1;
   cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
 }

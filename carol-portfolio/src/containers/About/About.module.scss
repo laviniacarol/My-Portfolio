@@ -1,0 +1,88 @@
+.AboutSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.MainRow {
+  display: flex;
+  padding: 80px;
+  justify-content: center;     
+  align-items: center;
+  gap: 90px;                    
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Content {
+  max-width: 500px;
+}
+
+.Who {
+  font-size: clamp(2.5rem, 5vw, 1.5rem);
+  color: #1e40ff;
+  font-family: "Wonderful Branding", cursive;
+  text-align: left;
+}
+
+.Nerd {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: #000;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+}
+
+.Parenthesis {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  color: #1e40ff;
+  font-family: "Biro Script", cursive;
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.MainContent {
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  max-width: 600px;
+  font-weight: 800;
+  color: #000;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+}
+
+.Arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+  gap: 1100px;
+}
+
+.Arrow {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #1e40ff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
