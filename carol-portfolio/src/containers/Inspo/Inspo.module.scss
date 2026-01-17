@@ -1,0 +1,81 @@
+.hero {
+  padding: 1rem 5rem;
+}
+
+.title {
+  font-family: 'Wonderful Branding', serif;
+  color: #041cf1;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  img {
+    height: 410px;
+    border-radius: 10px;
+    box-shadow: 0 18px 40px rgb(115, 117, 139);
+    object-fit: cover;
+    transition: all 1s ease;
+  }
+
+  img:hover {
+    transform: scale(1.02);
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  p:hover {
+    color: #1123c2da;
+  }
+}
+
+.card:nth-child(2) { margin-top: 2.5rem; }
+.card:nth-child(4) { margin-top: 3.5rem; }
+
+.more {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inter;
+}
+
+
+.Arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  gap: 1400px;
+}
+
+.Arrow {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #1e40ff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
