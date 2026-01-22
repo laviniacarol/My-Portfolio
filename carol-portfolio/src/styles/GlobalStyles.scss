@@ -22,9 +22,31 @@ body {
   overflow: hidden;
 }
 
-.Title {
-  font-family: 'Wonderful Branding', serif;
+.global-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 1400px;
+}
+
+.global-arrow {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #1e40ff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.global-title {
+  font-family: 'Biro Script', cursive;
   color: #041cf1;
-  font-size: 1.4rem;
+  font-size: 3rem;
+  margin-bottom: 5px;
+  padding-bottom: 0;
   font-weight: 400;
 }

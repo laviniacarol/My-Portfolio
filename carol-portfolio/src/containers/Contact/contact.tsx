@@ -7,7 +7,7 @@ import linkedin from "../../assets/icons/linkedin.svg";
 export default function Contact() {
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>Entre em contato...</h1>
+      <h1 className="global-title">Entre em contato...</h1>
 
       <p className={styles.text}>
         Entre em contato comigo se houver algo que eu possa fazer
@@ -46,6 +46,7 @@ export default function Contact() {
       </div>
 
       <h2 className={styles.signature}>Ass. Carol :)</h2>
+
     </section>
   );
 }

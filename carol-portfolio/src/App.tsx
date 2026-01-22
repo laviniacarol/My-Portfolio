@@ -12,11 +12,15 @@ import Contact from "./containers/Contact/contact";
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<Contact />} />
-        <Route path="/sobre" element={<About />} />
-      </Route>
-    </Routes>
+   <Routes>
+  <Route element={<Layout />}>
+    <Route path="/" element={<Home />} />
+    <Route path="/sobre" element={<About />} />
+    <Route path="/formacao" element={<Education />} />
+    <Route path="/inspo" element={<Inspo />} />
+        <Route path="/contact" element={<Contact />} />
+  </Route>
+</Routes>
+
   );
 }

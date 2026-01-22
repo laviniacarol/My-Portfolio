@@ -1,16 +1,24 @@
 import styles from "./Header.module.scss";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   const clickSound = new Audio("/click.mp3");
 
-  const toggleMenu = () => {
+  const handleNav = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    path: string
+  ) => {
+    e.preventDefault();          // impede reload
+    e.stopPropagation();         // impede overlay de interceptar
     clickSound.volume = 0.12;
     clickSound.currentTime = 0;
     clickSound.play();
-    setOpen(prev => !prev);
+    setOpen(false);
+    navigate(path);
   };
 
   useEffect(() => {
@@ -23,7 +31,7 @@ export default function Header() {
         className={`${styles.menuBtn} ${open ? styles.open : ""}`}
         aria-label="Menu"
         aria-expanded={open}
-        onClick={toggleMenu}
+        onClick={() => setOpen(prev => !prev)}
       >
         <span />
         <span />
@@ -37,18 +45,27 @@ export default function Header() {
         />
       )}
 
-      <nav className={`${styles.menu} ${open ? styles.show : ""}`}>
-        <a onClick={() => setOpen(false)} href="#home">Home</a>
-        <a onClick={() => setOpen(false)} href="#about">Sobre mim</a>
-        <a onClick={() => setOpen(false)} href="#education">Formação</a>
-        <a onClick={() => setOpen(false)} href="#inspo">Inspirações</a>
-        <a onClick={() => setOpen(false)} href="#tech">Tecnologias</a>
-        <a onClick={() => setOpen(false)} href="#projects">Projetos</a>
-        <a onClick={() => setOpen(false)} href="#contact">Contato</a>
+      <nav
+        className={`${styles.menu} ${open ? styles.show : ""}`}
+        onClick={(e) => e.stopPropagation()} // 🔑 linha mágica
+      >
+        <a href="/" onClick={(e) => handleNav(e, "/")}>Home</a>
+        <a href="/sobre" onClick={(e) => handleNav(e, "/sobre")}>Sobre mim</a>
+        <a href="/formacao" onClick={(e) => handleNav(e, "/formacao")}>Formação</a>
+        <a href="/inspo" onClick={(e) => handleNav(e, "/inspo")}>Inspirações</a>
+        <a href="/tech" onClick={(e) => handleNav(e, "/tech")}>Tecnologias</a>
+        <a href="/projects" onClick={(e) => handleNav(e, "/projects")}>Projetos</a>
+        <a href="/contact" onClick={(e) => handleNav(e, "/contact")}>Contato</a>
       </nav>
 
       <div className={styles.lang}>
-        <span className={styles.arrow}>‹</span>
+        <span
+          className={styles.arrow}
+          onClick={() => navigate("/")}
+        >
+          ‹
+        </span>
+
         <img
           src="https://flagcdn.com/w40/br.png"
           alt="Idioma português"

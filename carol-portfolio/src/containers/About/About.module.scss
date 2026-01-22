@@ -198,3 +198,26 @@
   }
 
 }
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .MainRow {
+    padding: 1.7rem;
+    gap: 10px;
+  }
+
+  .Who {
+    font-size: 1.6rem;
+  }
+
+  .MainContent {
+    width: 340px;
+  }
+  
+  .Image {
+    max-width: 300px;
+  }
+
+
+
+}
