@@ -1,0 +1,87 @@
+
+
+.container {
+  padding: 1rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Biro Script", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #1f5cff;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #444;
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.iconItem {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: inherit;
+
+  background: transparent !important;
+  filter: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+
+  transition: transform 0.25s ease;
+
+  img {
+    width: 180px;
+    height: auto;
+    display: block;
+
+    background: transparent !important;
+    border-radius: 0;
+    box-shadow: none;
+
+    transition: transform 0.25s ease;
+  }
+
+  span {
+    font-size: 1.5rem;
+    font-family: "Biro Script", cursive;
+    font-weight: 500;
+    color: red;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  &:active {
+    transform: translateY(-2px) scale(0.97);
+  }
+}
+
+/* specfic size for linkedin icon */
+.linkedin img {
+  width: 140px;
+}
+
+.signature {
+  margin-top: 3rem;
+  align-self: flex-end;
+  font-family: "Biro Script", cursive;
+  font-size: 2.4rem;
+  color: #1f5cff;
+}

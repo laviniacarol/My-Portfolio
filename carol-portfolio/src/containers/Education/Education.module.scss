@@ -1,0 +1,54 @@
+
+
+.mainContainer {
+    padding: 2rem 6rem;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #041cf1;
+    font-family: 'Wonderful Branding', cursive;
+    margin-bottom: -1.8rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    color: #0417c1e7;
+    font-family: inter, sans-serif;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: -0.4rem;
+}
+
+.description {
+    font-size: 23px;
+    color: #474141;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    max-width: 800px;
+}
+
+.Arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 1400px;
+}
+
+.Arrow {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #1e40ff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
