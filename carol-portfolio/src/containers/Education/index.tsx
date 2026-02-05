@@ -1,30 +1,42 @@
-import styles from './Education.module.scss';
+import styles from "./Education.module.scss";
+import Reveal from "../../components/Reveal/Reveal";
+import { useParallax } from "../../hooks/useParallax";
 
 export default function Education() {
+  const titleOffset = useParallax(0.08);
+
   return (
     <section className={styles.mainContainer}>
-      <h1 className={styles.title}>Formação Superior</h1>
+      
+      <h1
+        className={styles.title}
+      >
+        Formação Superior
+      </h1>
 
-      <p className={styles.description}>
-        Bacharelado em Engenharia de Software pela UNOPAR, com foco em
-        desenvolvimento, arquitetura e qualidade de sistemas.
-        <br />
-        <span>(2022 — julho de 2026)</span>
-      </p>
+      <Reveal delay={0.12}>
+        <p className={styles.description}>
+          Bacharelado em Engenharia de Software pela UNOPAR, com foco em
+          desenvolvimento, arquitetura e qualidade de sistemas.
+          <br />
+          <span>(2022 — julho de 2026)</span>
+        </p>
+      </Reveal>
 
-      <h2 className={styles.subtitle}>Principais disciplinas cursadas:</h2>
+      <Reveal delay={0.24}>
+        <h2 className={styles.subtitle}>Principais disciplinas cursadas:</h2>
+      </Reveal>
 
-      <ul className={styles.description}>
-        <li>Desenvolvimento de E-commerce com CMS</li>
-        <li>Infraestrutura Ágil</li>
-        <li>Frameworks para Desenvolvimento de Software (Java e Spring)</li>
-        <li>Arquitetura de Software</li>
-        <li>Segurança e Auditoria de Sistemas</li>
-      </ul>
+      <Reveal delay={0.36}>
+        <ul className={styles.description}>
+          <li>Desenvolvimento de E-commerce com CMS</li>
+          <li>Infraestrutura Ágil</li>
+          <li>Frameworks para Desenvolvimento de Software (Java e Spring)</li>
+          <li>Arquitetura de Software</li>
+          <li>Segurança e Auditoria de Sistemas</li>
+        </ul>
+      </Reveal>
+
     </section>
   );
 }
-
-
-    
-

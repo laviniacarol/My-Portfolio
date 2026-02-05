@@ -6,6 +6,7 @@ import Education from "./containers/Education";
 import Inspo from "./containers/Inspo/inspo";
 import Tecnologias from "./containers/Tech/tech";
 import Contact from "./containers/Contact/contact";
+import Footer from "./containers/Footer/Footer";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <section id="inspo"><Inspo /></section>
       <section id="tech"><Tecnologias /></section>
       <section id="contact"><Contact /></section>
+      <section id="footer"><Footer /></section>
     </Layout>
   );
 }

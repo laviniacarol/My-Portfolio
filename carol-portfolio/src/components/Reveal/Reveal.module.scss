@@ -7,6 +7,10 @@
   will-change: transform, opacity;
 }
 
+.revealGrid {
+  display: contents;
+}
+
 .visible {
   opacity: 1;
   transform: translateY(0);

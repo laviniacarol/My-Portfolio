@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+  background: #21202b;
+  padding: clamp(2rem, 4vw, 3.5rem) clamp(2rem, 8vw, 8rem);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(0.6rem, 1.5vw, 1rem);
+}
+
+.name {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.links {
+  display: flex;
+  gap: clamp(1rem, 2vw, 1.8rem);
+
+  a {
+    font-family: "Inter", sans-serif;
+    font-size: clamp(0.85rem, 1.1vw, 1rem);
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.copy {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(0.7rem, 1vw, 0.85rem);
+  color: #6b7280;
+}

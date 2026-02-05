@@ -1,15 +1,16 @@
 .hero {
   padding: 1rem 14rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .title {
-  font-family: 'Wonderful Branding', serif;
+  font-family: "Wonderful Branding", serif;
   color: #041cf1;
   font-size: 2.3rem;
   font-weight: 400;
   margin-bottom: 3rem;
 }
-
 
 .grid {
   display: flex;
@@ -31,7 +32,7 @@
     height: 410px;
     border-radius: 10px;
     object-fit: cover;
-    transition: all 1s ease;
+    transition: transform 1s ease;
   }
 
   img:hover {
@@ -41,21 +42,26 @@
   p {
     font-size: 0.9rem;
     margin-top: 0.5rem;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
   }
+
   p:hover {
     color: #1123c2da;
     cursor: pointer;
   }
 }
 
-.card:nth-child(2) { margin-top: 2.5rem; }
-.card:nth-child(4) { margin-top: 3.5rem; }
+.card:nth-child(2) {
+  margin-top: 2.5rem;
+}
+
+.card:nth-child(4) {
+  margin-top: 3.5rem;
+}
 
 .more {
   margin-top: 2rem;
   font-size: 1rem;
   font-weight: 500;
-  font-family: inter;
+  font-family: Inter, sans-serif;
 }
-
