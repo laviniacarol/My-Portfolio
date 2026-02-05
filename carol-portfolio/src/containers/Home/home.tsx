@@ -4,25 +4,29 @@ import Reveal from "../../components/Reveal/Reveal";
 
 export default function Hero() {
   return (
-     <Reveal>
     <section className={styles.hero}>
       <div className={styles.content}>
-        <h1 className={`${styles.name} ${styles.reveal1}`}>Carol Lavinia</h1>
-        <h2 className={`${styles.portfolio} ${styles.reveal2}`}>Portfólio</h2>
 
-      <div className={`${styles.subtitle} ${styles.reveal3}`}>
-          <img
-            src={handImage}
-            alt="Mão segurando caneta"
-            className={styles.hand}
-          />
-          <span>
-            Engenheira de Software
-          </span>
+        <Reveal delay={0}>
+          <h1 className={styles.name}>Carol Lavinia</h1>
+        </Reveal>
 
-        </div>
+        <Reveal delay={0.12}>
+          <h2 className={styles.portfolio}>Portfólio</h2>
+        </Reveal>
+
+        <Reveal delay={0.24}>
+          <div className={styles.subtitle}>
+            <img
+              src={handImage}
+              alt="Mão segurando caneta"
+              className={styles.hand}
+            />
+            <span>Engenheira de Software</span>
+          </div>
+        </Reveal>
+
       </div>
     </section>
-    </Reveal>
   );
 }

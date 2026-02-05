@@ -11,31 +11,11 @@
   overflow: hidden;
 }
 
-@keyframes backgroundShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.fadeInUp {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
-  animation-delay: 0.2s;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .MainRow {
   display: flex;
-  justify-content: center;     
+  justify-content: center;
   align-items: center;
-  gap: 60px;                    
+  gap: 60px;
   width: 70%;
   max-width: 1100px;
   margin: 0 auto;
@@ -49,14 +29,7 @@
   font-size: clamp(2.5rem, 5vw, 3rem);
   color: #1e40ff;
   font-family: "Wonderful Branding", cursive;
-  text-align: left;
-  bottom: 0;
-  transition: transform 0.6s ease;
-
- &:hover {
-    transform: rotateZ(3deg) scale(1.05);
-    text-shadow: 0 0 10px rgba(4,28,241,0.7), 0 0 20px rgba(120,119,198,0.5);
-  }
+  font-weight: lighter;
 }
 
 .Nerd {
@@ -89,22 +62,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 1000px;
-  overflow: hidden; 
-  border-radius: 16px; 
+  overflow: hidden;
+  border-radius: 16px;
+
+  will-change: transform;
+  transition: transform 0.15s linear;
 }
 
 .Image {
   width: 100%;
   max-width: 500px;
   border-radius: 40px;
-  will-change: transform;
-  border: none;        
-  outline: none;       
- 
+  display: block;
 }
-
-
-
-
-

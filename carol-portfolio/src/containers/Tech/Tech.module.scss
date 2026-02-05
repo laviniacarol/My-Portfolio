@@ -30,13 +30,7 @@
   text-align: center;
   z-index: 2;
   position: relative;
-  transition: transform 0.6s ease;
-  cursor: default;
-
-  &:hover {
-    transform: rotateZ(3deg) scale(1.05);
-    text-shadow: 0 0 10px rgba(4,28,241,0.7), 0 0 20px rgba(120,119,198,0.5);
-  }
+ 
 }
 
 .TechGrid {
