@@ -1,26 +1,21 @@
-import { Routes, Route } from "react-router-dom";
+import Layout from "./Layout/layout";
 
-import Layout from "../src/Layout/layout";
-
-/* containers */
 import Home from "./containers/Home/home";
 import About from "./containers/About/About";
-import Inspo from "./containers/Inspo/inspo";
 import Education from "./containers/Education";
+import Inspo from "./containers/Inspo/inspo";
+import Tecnologias from "./containers/Tech/tech";
 import Contact from "./containers/Contact/contact";
-
 
 export default function App() {
   return (
-   <Routes>
-  <Route element={<Layout />}>
-    <Route path="/" element={<Home />} />
-    <Route path="/sobre" element={<About />} />
-    <Route path="/formacao" element={<Education />} />
-    <Route path="/inspo" element={<Inspo />} />
-        <Route path="/contact" element={<Contact />} />
-  </Route>
-</Routes>
-
+    <Layout>
+      <section id="home"><Home /></section>
+      <section id="about"><About /></section>
+      <section id="education"><Education /></section>
+      <section id="inspo"><Inspo /></section>
+      <section id="tech"><Tecnologias /></section>
+      <section id="contact"><Contact /></section>
+    </Layout>
   );
 }

@@ -1,7 +1,7 @@
 
 
 .mainContainer {
-    padding: 2rem 6rem;
+    padding: 2rem 15rem;
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -26,29 +26,9 @@
 
 .description {
     font-size: 23px;
-    color: #474141;
+    color: #0b0101;
     font-family: Inter, sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     max-width: 800px;
 }
 
-.Arrows {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  gap: 1400px;
-}
-
-.Arrow {
-  background: none;
-  border: none;
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: #1e40ff;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-
-  &:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
-  }
-}

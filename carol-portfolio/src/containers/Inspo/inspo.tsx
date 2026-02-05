@@ -39,10 +39,6 @@ export default function Inspo() {
       </div>
 
 
-        <div className={styles.Arrows}>
-        <button className={styles.Arrow}>‹</button>
-        <button className={styles.Arrow}>›</button>
-      </div>
 
     </section>
   )

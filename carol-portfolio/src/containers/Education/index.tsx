@@ -21,11 +21,6 @@ export default function Education() {
         <li>Arquitetura de Software</li>
         <li>Segurança e Auditoria de Sistemas</li>
       </ul>
-
-      <div className={styles.Arrows}>
-        <button className={styles.Arrow}>‹</button>
-        <button className={styles.Arrow}>›</button>
-      </div>
     </section>
   );
 }

@@ -1,92 +1,107 @@
 .hero {
-  min-height: 85vh;
-  padding: 0px;
-  margin: 0px;
+  min-height: 100vh;
   display: flex;
-  z-index: 1000;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-.arrow {
-  font-size: clamp(2rem, 4vw, 1rem);
-  cursor: pointer;
-  color: #000;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-
-  &:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
-  }
+  overflow: hidden;
 }
 
 .content {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0;
-  margin: 0;
-  padding: 0;
   align-items: center;
-  justify-content: center;
   text-align: center;
+  line-height: 1;
 }
+
 
 .name {
   font-family: "Wonderful Branding", cursive;
-  font-size: clamp(3rem, 6vw, 4rem);
+  font-size: clamp(3.2rem, 6.5vw, 4.5rem);
   font-weight: 400;
   color: #041cf1;
   margin: 0;
 }
 
+
+
 .portfolio {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
-  color: #041cf1;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
   font-weight: 700;
-  margin-bottom: 0px;
-  margin-top: clamp(-60px, -10vw, -30px);
-  padding: 0;
+  letter-spacing: -0.02em;
+  color: #041cf1;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: clamp(0.6rem, 1.5vw, 1.2rem);
 }
+
 
 .subtitle {
   display: flex;
   align-items: center;
-  margin-top: clamp(-40px, -10vw, -50px);
-  gap: 3px;
-  font-size: clamp(2.6rem, 4vw, 3rem);
-  color: #041cf1;
+  justify-content: center;
+  padding-right: clamp(120px, 5vw, 180px);
+  gap: clamp(0.6rem, 1.2vw, 1rem);
+  margin-top: clamp(1.02rem, 1vw, 2rem);
 }
 
 .subtitle span {
   font-family: "Biro Script", cursive;
-  display: inline-block;
-  margin-right: clamp(130px, 20vw, 160px);
-  max-width: clamp(400px, 27vw, 430px);
-  margin-top: clamp(0px, -20vw, -50px);
-}
-
-.hand {
-  width: clamp(120px, 20vw, 180px);
-  margin-top: clamp(50px, -10vw, -20px);
-}
-
-.next {
-  position: absolute;
-  right: 24px;
-  bottom: 24px;
-  background: none;
-  border: none;
-  font-size: 62px;
+  font-size: clamp(2.4rem, 4vw, 3rem);
   color: #041cf1;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  white-space: nowrap;
+}
 
-  &:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
+@keyframes slideFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+
+.reveal1,
+.reveal2,
+.reveal3 {
+  opacity: 0;
+  animation: slideFadeDown 0.9s cubic-bezier(.2,.8,.2,1) forwards;
+  position: relative;
+}
+
+.reveal1::before,
+.reveal2::before,
+.reveal3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  animation: gradientFade 0.6s ease-out forwards;
+}
+
+
+@keyframes gradientFade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
+
+.hand {
+  width: clamp(110px, 18vw, 180px);
+  transform-origin: bottom center;
+  animation: handFloat 5s ease-in-out infinite;
+  transition: transform 0.4s ease;
+}
+
+@keyframes handFloat {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+

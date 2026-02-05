@@ -12,8 +12,8 @@ export default function Header() {
     e: React.MouseEvent<HTMLAnchorElement>,
     path: string
   ) => {
-    e.preventDefault();          // impede reload
-    e.stopPropagation();         // impede overlay de interceptar
+    e.preventDefault();          
+    e.stopPropagation();        
     clickSound.volume = 0.12;
     clickSound.currentTime = 0;
     clickSound.play();

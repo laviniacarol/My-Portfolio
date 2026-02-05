@@ -1,15 +1,22 @@
-import MyImage from '../../assets/images/Carol.png';
+import React from 'react';
+import MyImage from '../../assets/images/Carol.jpeg';
 import styles from './About.module.scss';
 
+import Reveal from "../../components/Reveal/Reveal";
+
 export default function About() {
+ 
+
   return (
+    <Reveal>
     <section className={styles.AboutSection}>
+    
 
       <div className={styles.MainRow}>
-        <div className={styles.Content}>
+        <div className={`${styles.Content} ${styles.fadeInUp}`}>
           <h1 className={styles.Who}>Quem sou eu?</h1>
-          <h2 className={styles.Nerd}>Eu sou uma nerd</h2>
-          <span className={styles.Parenthesis}>(como voce pode ver)</span>
+          <h2 className={styles.Nerd}>Carol Lavinia</h2>
+          <span className={styles.Parenthesis}>(uma nerd, como voce pode ver)</span>
 
           <div className={styles.MainContent}>
             e muito do que diferencia o meu trabalho é justamente sobre 
@@ -30,11 +37,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className={styles.Arrows}>
-        <button className={styles.Arrow}>‹</button>
-        <button className={styles.Arrow}>›</button>
-      </div>
-
     </section>
+    </Reveal>
   );
 }
