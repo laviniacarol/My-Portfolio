@@ -1,7 +1,7 @@
 import styles from "./Contact.module.scss";
 
 import github from "../../assets/icons/github.jpg";
-import computer from "../../../assets/icons/computer.png";
+import computer from "../../assets/icons/computer.png";
 import linkedin from "../../assets/icons/linkedin.svg";
 
 import Reveal from "../../components/Reveal/Reveal";
