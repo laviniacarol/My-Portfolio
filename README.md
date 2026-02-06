@@ -1,3 +1,4 @@
- Repositório do meu portfólio pessoal em desenvolvimento. Criei o protótipo no Canva e algumas páginas no Figma.
+<h1>Projeto em execução</h1>
 
-<img width="1919" height="917" alt="1" src="https://github.com/user-attachments/assets/0cb2f1ff-325d-46ce-9a56-690b5432bfb2" />
+https://github.com/user-attachments/assets/06bf9263-404d-4fd2-9e19-0cbacb9076de
+
