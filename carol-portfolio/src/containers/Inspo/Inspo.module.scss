@@ -7,7 +7,7 @@
 .title {
   font-family: "Wonderful Branding", serif;
   color: #041cf1;
-  font-size: 2.3rem;
+  font-size: clamp(1.6rem, 5vw, 2rem);
   font-weight: 400;
   margin-bottom: 3rem;
 }
@@ -65,3 +65,95 @@
   font-weight: 500;
   font-family: Inter, sans-serif;
 }
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .hero {
+    padding: 1rem 3rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; 
+  }
+
+  .card {
+    align-items: center; 
+    margin-top: 0 !important; 
+    img {
+      height: 500px;
+    }
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    padding: 1rem 11rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; 
+  }
+
+  .card {
+    align-items: center; 
+    margin-top: 0 !important; 
+    img {
+      height: 500px;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+   .hero {
+    padding: 1rem 15rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; 
+  }
+
+  .card {
+    align-items: center; 
+    margin-top: 0 !important; 
+    img {
+      height: 500px;
+    }
+  }
+}
+
+
+@media (min-width: 1281px) {
+  .hero {
+    padding: 1rem 8vw;   
+    overflow: visible;  
+  }
+
+  .grid {
+    max-width: 100%;
+    padding-inline: 3vw; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .card {
+    align-items: flex-start;
+
+    img {
+      height: 420px;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}
+ 

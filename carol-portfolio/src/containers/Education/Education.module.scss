@@ -11,7 +11,7 @@
   color: #041cf1;
   font-family: "Wonderful Branding", cursive;
   margin-bottom: -1.8rem;
-  font-size: 2.4rem;
+  font-size: clamp(1.9rem, 5vw, 2rem);
   font-weight: 500;
 
   /* PARALLAX CORE */
@@ -20,7 +20,7 @@
 }
 
 .subtitle {
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
   color: #0417c1e7;
   font-family: Inter, sans-serif;
   font-weight: 600;
@@ -29,7 +29,7 @@
 }
 
 .description {
-  font-size: 23px;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
   color: #0b0101;
   font-family: Inter, sans-serif;
   font-weight: 800;
@@ -40,4 +40,26 @@
   font-weight: 600;
   font-size: 0.95em;
   opacity: 0.85;
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) { 
+  .mainContainer {
+    padding: 2rem 4rem;
+  }
+ 
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mainContainer {
+    padding: 2rem 11rem;
+  }
+}
+
+
+@media (min-width: 1281px) {
+  .mainContainer {
+    padding: 2rem 8rem;
+  }
 }

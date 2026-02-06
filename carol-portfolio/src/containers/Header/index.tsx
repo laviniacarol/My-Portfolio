@@ -47,7 +47,7 @@ export default function Header() {
 
       <nav
         className={`${styles.menu} ${open ? styles.show : ""}`}
-        onClick={(e) => e.stopPropagation()} // 🔑 linha mágica
+        onClick={(e) => e.stopPropagation()} 
       >
         <a href="/" onClick={(e) => handleNav(e, "/")}>Home</a>
         <a href="/sobre" onClick={(e) => handleNav(e, "/sobre")}>Sobre mim</a>
@@ -58,19 +58,6 @@ export default function Header() {
         <a href="/contact" onClick={(e) => handleNav(e, "/contact")}>Contato</a>
       </nav>
 
-      <div className={styles.lang}>
-        <span
-          className={styles.arrow}
-          onClick={() => navigate("/")}
-        >
-          ‹
-        </span>
-
-        <img
-          src="https://flagcdn.com/w40/br.png"
-          alt="Idioma português"
-        />
-      </div>
     </header>
   );
 }

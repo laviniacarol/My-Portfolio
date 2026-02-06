@@ -18,7 +18,7 @@
 
 .name {
   font-family: "Wonderful Branding", cursive;
-  font-size: clamp(3.2rem, 6.5vw, 4.5rem);
+  font-size: clamp(2rem, 6.5vw, 4.5rem);
   font-weight: 400;
   color: #041cf1;
   margin: 0;
@@ -28,7 +28,7 @@
 
 .portfolio {
   font-family: Inter, sans-serif;
-  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  font-size: clamp(1.8rem, 5vw, 3.4rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   color: #041cf1;
@@ -42,14 +42,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: clamp(120px, 5vw, 180px);
+  padding-right: clamp(65px, 5vw, 180px);
   gap: clamp(0.6rem, 1.2vw, 1rem);
   margin-top: clamp(1.02rem, 1vw, 2rem);
 }
 
 .subtitle span {
   font-family: "Biro Script", cursive;
-  font-size: clamp(2.4rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 4vw, 3rem);
   color: #041cf1;
   white-space: nowrap;
 }
@@ -93,7 +93,7 @@
 
 
 .hand {
-  width: clamp(110px, 18vw, 180px);
+  width: clamp(65px, 18vw, 180px);
   transform-origin: bottom center;
   animation: handFloat 5s ease-in-out infinite;
   transition: transform 0.4s ease;
@@ -105,3 +105,6 @@
   100% { transform: translateY(0px) rotate(0deg); }
 }
 
+@media (min-width: 480px) and (max-width: 768px) { 
+
+}

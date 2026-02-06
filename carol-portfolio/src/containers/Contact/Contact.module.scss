@@ -9,7 +9,7 @@
 
 .title {
   font-family: "Biro Script", cursive;
-  font-size: 4rem;
+  font-size: clamp(3.4rem, 5vw, 4rem);
   font-weight: 400;
   margin-bottom: 0;
   color: #1f5cff;
@@ -83,8 +83,33 @@
   align-self: flex-end;
   font-weight: 400;
   font-family: "Biro Script", cursive;
-  font-size: 2.4rem;
+  font-size: clamp(2rem, 5vw, 2.4rem);
   color: #1f5cff;
 }
 
 
+@media (min-width: 480px) and (max-width: 768px) {
+  .container {
+    padding: 1rem 1.3rem;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .iconItem {
+    align-items: center;
+  }
+
+  .text {
+    width: 100%;       
+    max-width: 460px;  
+  }
+
+  .signature {
+    align-self: center; 
+  }
+}
