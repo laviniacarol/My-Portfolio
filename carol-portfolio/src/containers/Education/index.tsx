@@ -1,9 +1,7 @@
 import styles from "./Education.module.scss";
 import Reveal from "../../components/Reveal/Reveal";
-import { useParallax } from "../../hooks/useParallax";
 
 export default function Education() {
-  const titleOffset = useParallax(0.08);
 
   return (
     <section className={styles.mainContainer}>
