@@ -1,4 +1,4 @@
-import handImage from "../../assets/images/Hand.png";
+import handImage from "../../assets/images/hand.png";
 import styles from "./Home.module.scss";
 import Reveal from "../../components/Reveal/Reveal";
 
