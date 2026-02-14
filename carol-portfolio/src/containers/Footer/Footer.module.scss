@@ -52,3 +52,20 @@
     padding: clamp(2rem, 4vw, 3.5rem) clamp(1rem, 5vw, 2rem);
   }
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 1.25rem;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+  }
+}

@@ -113,3 +113,33 @@
     align-self: center; 
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem 1.25rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 1.25rem;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .iconItem img {
+    width: 140px;
+  }
+
+  .linkedin img {
+    width: 110px;
+  }
+
+  .signature {
+    align-self: center;
+  }
+}

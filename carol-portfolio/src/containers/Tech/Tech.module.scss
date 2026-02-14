@@ -123,3 +123,24 @@
     align-items: center;
   }
 }
+
+@media (max-width: 480px) {
+  .TecnologiasContainer {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .Title {
+    margin-bottom: 2.5rem;
+  }
+
+  .TechCard {
+    width: 100%;
+    max-width: 320px;
+    padding: 2rem 1.5rem;
+  }
+
+  .TechCard img {
+    width: 70px;
+    height: 70px;
+  }
+}

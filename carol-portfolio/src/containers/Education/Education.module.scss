@@ -63,3 +63,13 @@
     padding: 2rem 8rem;
   }
 }
+
+@media (max-width: 480px) {
+  .mainContainer {
+    padding: 2rem 1.25rem;
+  }
+
+  .title {
+    margin-bottom: -0.8rem;
+  }
+}

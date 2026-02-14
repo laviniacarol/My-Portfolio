@@ -92,12 +92,11 @@ body, html {
   left: 30px;
     background-color: transparent;
 
-
-  width: min(150px, 85vw);
+  width: min(220px, 85vw);
   max-height: calc(100vh - 120px);
 
   background-color: #eaeae8;
-  padding: 2.2rem 1.8rem;
+  padding: 2.4rem 2.1rem;
 
   display: flex;
   flex-direction: column;
@@ -172,9 +171,32 @@ body, html {
   }
 
   .topBar {
-    width: 75%;
+    width: 100%;
   }
   
+}
+
+@media (max-width: 480px) {
+  .topBar {
+    height: 56px;
+    padding: 0 16px;
+  }
+
+  .menuBtn span {
+    width: 24px;
+    height: 3px;
+  }
+
+  .menu {
+    top: 56px;
+    left: 16px;
+    width: min(260px, 92vw);
+    padding: 1.8rem 1.4rem;
+  }
+
+  .menu a {
+    font-size: 1rem;
+  }
 }
 
 

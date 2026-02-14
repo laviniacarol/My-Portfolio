@@ -141,6 +141,7 @@
     padding-inline: 3vw; 
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
     gap: 1.5rem;
@@ -153,6 +154,32 @@
       height: 420px;
       width: auto;
       max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem 1.25rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding-inline: 0;
+  }
+
+  .card {
+    align-items: center;
+    margin-top: 0 !important;
+
+    img {
+      height: 320px;
+    }
+
+    p {
+      text-align: center;
     }
   }
 }

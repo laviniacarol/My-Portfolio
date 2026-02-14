@@ -42,6 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   padding-right: clamp(65px, 5vw, 180px);
   gap: clamp(0.6rem, 1.2vw, 1rem);
   margin-top: clamp(1.02rem, 1vw, 2rem);
@@ -107,4 +108,24 @@
 
 @media (min-width: 480px) and (max-width: 768px) { 
 
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding-inline: 1.25rem;
+  }
+
+  .subtitle {
+    padding-right: 0;
+    gap: 0.5rem;
+  }
+
+  .subtitle span {
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hand {
+    width: clamp(52px, 22vw, 120px);
+  }
 }
