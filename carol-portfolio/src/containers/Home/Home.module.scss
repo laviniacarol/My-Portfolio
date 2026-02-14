@@ -22,6 +22,8 @@
   font-weight: 400;
   color: #041cf1;
   margin: 0;
+  line-height: 1.08;
+  padding-inline: 0.25rem;
 }
 
 
@@ -113,6 +115,11 @@
 @media (max-width: 480px) {
   .content {
     padding-inline: 1.25rem;
+  }
+
+  .name {
+    line-height: 1.12;
+    padding-inline: 0.4rem;
   }
 
   .subtitle {
